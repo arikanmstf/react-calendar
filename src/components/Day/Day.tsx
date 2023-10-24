@@ -1,6 +1,6 @@
 import { FC, useMemo, useState } from "react";
 import styles from "./Day.module.css";
-import { useAppContext } from "../../context/app";
+import { useMonthViewContext } from "../MonthView/MonthViewProvider";
 
 type Props = {
   date: Date;
@@ -9,12 +9,12 @@ type Props = {
 const Day: FC<Props> = ({ date }) => {
   const [isToday, setIsToday] = useState<boolean>();
   const [isAnotherMonth, setIsAnotherMonth] = useState<boolean>();
-  const { activeDate } = useAppContext();
+  const { referenceDate } = useMonthViewContext();
   const dayOfTheMonth = date.getDate();
   useMemo(() => {
     setIsToday(new Date().setHours(0, 0, 0, 0) === date.setHours(0, 0, 0, 0));
-    setIsAnotherMonth(activeDate.getMonth() !== date.getMonth());
-  }, [date, activeDate]);
+    setIsAnotherMonth(referenceDate.getMonth() !== date.getMonth());
+  }, [date, referenceDate]);
 
   return (
     <div className={styles.day}>

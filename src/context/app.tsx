@@ -10,16 +10,18 @@ import {
 
 type AppState = {
   activeDate: Date;
-  activeMonth: "CURRENT" | "NEXT" | "PREVIOUS";
+  monthsToShow: Date[];
+  splideIndex: number;
 };
 type AppAction = {
-  type: "UPDATE_ACTIVE_DATE" | "UPDATE_ACTIVE_MONTH" | "ADD_EVENT";
-  data: Date;
+  type: "GO_TO_NEXT_MONTH" | "GO_TO_PREVIOUS_MONTH" | "UPDATE_SPLIDE_INDEX";
+  data?: any;
 };
 
 const AppContext = createContext<AppState>({
   activeDate: new Date(),
-  activeMonth: "CURRENT",
+  monthsToShow: [],
+  splideIndex: 1,
 });
 const AppDispatchContext = createContext<Dispatch<AppAction>>(() => {
   throw new Error("Please initialize the dispatch function.");
@@ -29,26 +31,35 @@ const appReducer: Reducer<AppState, AppAction> = (
   state: AppState,
   action: AppAction,
 ) => {
+  const { monthsToShow } = state;
+  const middleMonth = monthsToShow[monthsToShow.length - 2];
+
   switch (action.type) {
-    case "ADD_EVENT":
+    case "UPDATE_SPLIDE_INDEX":
+      console.log(action);
       return {
         ...state,
+        splideIndex: action.data,
       };
-    case "UPDATE_ACTIVE_DATE":
+    case "GO_TO_PREVIOUS_MONTH": {
+      const newPreviousMonth = new Date(middleMonth);
+      newPreviousMonth.setMonth(newPreviousMonth.getMonth() - 2);
+
       return {
         ...state,
-        activeMonth: "CURRENT",
-        activeDate: action.data,
+        monthsToShow: [newPreviousMonth, monthsToShow[0], monthsToShow[1]],
       };
-    case "UPDATE_ACTIVE_MONTH":
-      const activeMonth =
-        state.activeDate.valueOf() > action.data.valueOf()
-          ? "PREVIOUS"
-          : "NEXT";
+    }
+
+    case "GO_TO_NEXT_MONTH": {
+      const newNextMonth = new Date(middleMonth);
+      newNextMonth.setMonth(newNextMonth.getMonth() + 2);
+
       return {
         ...state,
-        activeMonth,
+        monthsToShow: [monthsToShow[1], monthsToShow[2], newNextMonth],
       };
+    }
   }
   return state;
 };
@@ -59,11 +70,21 @@ type AppContextProviderProps = {
 };
 const AppContextProvider: FC<AppContextProviderProps> = ({
   children,
-  date,
+  date: middleMonth,
 }) => {
+  const nextMonth = new Date(middleMonth);
+  nextMonth.setMonth(middleMonth.getMonth() + 1);
+
+  const previousMonth = new Date(middleMonth);
+  previousMonth.setMonth(middleMonth.getMonth() - 1);
+
   const [state, dispatch] = useReducer<Reducer<AppState, AppAction>>(
     appReducer,
-    { activeDate: date, activeMonth: "CURRENT" },
+    {
+      activeDate: middleMonth,
+      monthsToShow: [previousMonth, middleMonth, nextMonth],
+      splideIndex: 1,
+    },
   );
 
   return (
@@ -78,15 +99,30 @@ const AppContextProvider: FC<AppContextProviderProps> = ({
 export const useAppContext = () => {
   const context = useContext(AppContext);
   const dispatch = useContext(AppDispatchContext);
-  const updateActiveDate = (data: Date) => {
-    dispatch({ type: "UPDATE_ACTIVE_MONTH", data });
-    setTimeout(() => {
-      dispatch({ type: "UPDATE_ACTIVE_DATE", data });
-    }, 1000);
+
+  const goToNextMonth = () => {
+    if (context.monthsToShow.length < 3) {
+      return;
+    }
+    dispatch({ type: "GO_TO_NEXT_MONTH" });
   };
+  const goToPreviousMonth = () => {
+    if (context.monthsToShow.length < 3) {
+      return;
+    }
+    dispatch({ type: "GO_TO_PREVIOUS_MONTH" });
+  };
+
+  const updateSplideIndex = (index: number) => {
+    dispatch({ type: "UPDATE_SPLIDE_INDEX", data: index });
+  };
+
   return {
     ...context,
-    updateActiveDate,
+    activeDate: context.monthsToShow[context.monthsToShow.length - 2],
+    goToNextMonth,
+    goToPreviousMonth,
+    updateSplideIndex,
   };
 };
 

@@ -25,7 +25,7 @@ const useDays = ({ date }: { date?: Date } = {}) => {
       updatedDays.push(daysInTheWeek);
     }
     setDays(updatedDays);
-  }, [activeDate]);
+  }, [activeDate]); // eslint-disable-line
 
   return days;
 };

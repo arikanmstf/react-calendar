@@ -4,7 +4,6 @@ import Month from "../Month";
 import Week from "../Week";
 import Day from "../Day";
 import { useAppContext } from "../../context/app";
-import MonthSelector from "../MonthSelector";
 import "../../ui/ui.css";
 import Header from "../Header/Header";
 

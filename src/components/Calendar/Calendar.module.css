@@ -1,0 +1,7 @@
+.calendar {
+    height: 100%;
+}
+.monthContainer {
+    position: relative;
+    min-height: 768px;
+}

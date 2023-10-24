@@ -4,4 +4,5 @@ export type ButtonProps = {
   onClick: MouseEventHandler;
   children: ReactNode;
   icon?: boolean;
+  disabled?: boolean;
 };

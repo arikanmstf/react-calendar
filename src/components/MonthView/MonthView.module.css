@@ -1,0 +1,45 @@
+.month {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.weekContainer {
+
+}
+
+.week {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.week:first-child {
+    border-top: 1px solid rgb(205, 205, 205);;
+}
+
+
+.nextMonth {
+    left: 768px;
+    z-index: 2;
+}
+
+.previousMonth {
+    left: -768px;
+    z-index: 2;
+}
+
+.currentMonth {
+    left: 0;
+    z-index: 1;
+}
+
+.previousMonth:global(.active), .nextMonth:global(.active), .currentMonth:global(.active) {
+    transition: left 0.5s;
+    left: 0;
+}

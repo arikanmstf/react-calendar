@@ -4,28 +4,33 @@ import { Button } from "../../ui";
 import styles from "./MonthSelector.module.css";
 
 const MonthSelector = () => {
-  const { updateActiveDate, activeDate } = useAppContext();
+  const { updateActiveDate, activeDate, activeMonth } = useAppContext();
   const onPreviousMonthClick = () => {
-    activeDate.setMonth(activeDate.getMonth() - 1);
-    updateActiveDate(new Date(activeDate));
+    const newDate = new Date(activeDate);
+    newDate.setMonth(newDate.getMonth() - 1);
+    updateActiveDate(newDate);
   };
   const onNextMonthClick = () => {
-    activeDate.setMonth(activeDate.getMonth() + 1);
-    updateActiveDate(new Date(activeDate));
+    const newDate = new Date(activeDate);
+    newDate.setMonth(newDate.getMonth() + 1);
+    updateActiveDate(newDate);
   };
   const onTodayClick = () => {
     updateActiveDate(new Date());
   };
+  const buttonDisabled = activeMonth !== "CURRENT";
 
   return (
     <span className={styles.monthSelector}>
-      <Button onClick={onTodayClick}>Today</Button>
+      <Button disabled={buttonDisabled} onClick={onTodayClick}>
+        Today
+      </Button>
       <div className={styles.navigationButtonContainer}>
-        <Button icon onClick={onPreviousMonthClick}>
+        <Button disabled={buttonDisabled} icon onClick={onPreviousMonthClick}>
           <ChevronLeft />
         </Button>
 
-        <Button icon onClick={onNextMonthClick}>
+        <Button disabled={buttonDisabled} icon onClick={onNextMonthClick}>
           <ChevronRight />
         </Button>
       </div>

@@ -10,14 +10,16 @@ import {
 
 type AppState = {
   activeDate: Date;
+  activeMonth: "CURRENT" | "NEXT" | "PREVIOUS";
 };
 type AppAction = {
-  type: "UPDATE_ACTIVE_DATE" | "ADD_EVENT";
+  type: "UPDATE_ACTIVE_DATE" | "UPDATE_ACTIVE_MONTH" | "ADD_EVENT";
   data: Date;
 };
 
 const AppContext = createContext<AppState>({
   activeDate: new Date(),
+  activeMonth: "CURRENT",
 });
 const AppDispatchContext = createContext<Dispatch<AppAction>>(() => {
   throw new Error("Please initialize the dispatch function.");
@@ -35,7 +37,17 @@ const appReducer: Reducer<AppState, AppAction> = (
     case "UPDATE_ACTIVE_DATE":
       return {
         ...state,
+        activeMonth: "CURRENT",
         activeDate: action.data,
+      };
+    case "UPDATE_ACTIVE_MONTH":
+      const activeMonth =
+        state.activeDate.valueOf() > action.data.valueOf()
+          ? "PREVIOUS"
+          : "NEXT";
+      return {
+        ...state,
+        activeMonth,
       };
   }
   return state;
@@ -51,11 +63,11 @@ const AppContextProvider: FC<AppContextProviderProps> = ({
 }) => {
   const [state, dispatch] = useReducer<Reducer<AppState, AppAction>>(
     appReducer,
-    { activeDate: date },
+    { activeDate: date, activeMonth: "CURRENT" },
   );
 
   return (
-    <AppContext.Provider value={{ activeDate: state.activeDate }}>
+    <AppContext.Provider value={state}>
       <AppDispatchContext.Provider value={dispatch}>
         {children}
       </AppDispatchContext.Provider>
@@ -67,7 +79,10 @@ export const useAppContext = () => {
   const context = useContext(AppContext);
   const dispatch = useContext(AppDispatchContext);
   const updateActiveDate = (data: Date) => {
-    dispatch({ type: "UPDATE_ACTIVE_DATE", data });
+    dispatch({ type: "UPDATE_ACTIVE_MONTH", data });
+    setTimeout(() => {
+      dispatch({ type: "UPDATE_ACTIVE_DATE", data });
+    }, 1000);
   };
   return {
     ...context,

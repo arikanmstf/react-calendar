@@ -1,50 +1,31 @@
-import React, { FC, useMemo, useState } from "react";
-import { getStartDayOfMonthCalendar } from "../../utils/date";
-import Month from "../Month";
-import Week from "../Week";
-import Day from "../Day";
-import { useAppContext } from "../../context/app";
+import React, { FC } from "react";
+import MonthView from "../MonthView";
 import "../../ui/ui.css";
 import Header from "../Header/Header";
-
-const NR_OF_WEEKS_TO_SHOW = 6;
-const DAYS_IN_A_WEEK = 7;
+import useDays from "../../hooks/useDays";
+import { useAppContext } from "../../context/app";
+import styles from "./Calendar.module.css";
 
 const Calendar: FC = () => {
-  const [days, setDays] = useState<Date[][]>([[]]);
   const { activeDate } = useAppContext();
+  const days = useDays();
+  const nextMonth = new Date(activeDate);
+  nextMonth.setMonth(activeDate.getMonth() + 1);
 
-  useMemo(() => {
-    const updatedDays = [];
+  const previousMonth = new Date(activeDate);
+  previousMonth.setMonth(activeDate.getMonth() - 1);
 
-    const startDate = getStartDayOfMonthCalendar(activeDate);
-    for (let i = 0; i < NR_OF_WEEKS_TO_SHOW; i++) {
-      const daysInTheWeek = [];
-      const weekDate = new Date(startDate.getTime());
-      weekDate.setDate(weekDate.getDate() + i * 7);
-
-      for (let j = 0; j < DAYS_IN_A_WEEK; j++) {
-        const day = new Date(weekDate.getTime());
-        day.setDate(day.getDate() + j);
-        daysInTheWeek.push(day);
-      }
-      updatedDays.push(daysInTheWeek);
-    }
-    setDays(updatedDays);
-  }, [activeDate]);
+  const daysOfNextMonth = useDays({ date: nextMonth });
+  const daysOfPreviousMonth = useDays({ date: previousMonth });
 
   return (
-    <div>
+    <div className={styles.calendar}>
       <Header />
-      <Month>
-        {days.map((week) => (
-          <Week>
-            {week.map((day) => (
-              <Day date={day}></Day>
-            ))}
-          </Week>
-        ))}
-      </Month>
+      <div className={styles.monthContainer}>
+        <MonthView month="PREVIOUS" days={daysOfPreviousMonth} />
+        <MonthView month="CURRENT" days={days} />
+        <MonthView month="NEXT" days={daysOfNextMonth} />
+      </div>
     </div>
   );
 };

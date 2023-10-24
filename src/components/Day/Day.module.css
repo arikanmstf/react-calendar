@@ -6,8 +6,7 @@
     position: relative;
     padding: 5px;
     border-right: 1px solid rgb(205, 205, 205);
-    /* background-color: rgb(245, 245, 245);
-    color: rgb(135, 135, 135); */
+    background-color: rgb(255, 255, 255);
 }
 
 .day:first-child {

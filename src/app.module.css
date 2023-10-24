@@ -6,7 +6,7 @@
 }
 
 .calendarContainer {
-    max-width: 768px;
-    min-width: 360px;
-    width: 100%;
+    width: 768px;
+    height: 100%;
+    overflow-x: hidden;
 }

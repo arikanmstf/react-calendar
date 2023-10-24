@@ -1,5 +1,5 @@
 import { FC, useMemo, useState } from "react";
-import styles from "./day.module.css";
+import styles from "./Day.module.css";
 import { useAppContext } from "../../context/app";
 
 type Props = {
@@ -26,7 +26,11 @@ const Day: FC<Props> = ({ date }) => {
         {dayOfTheMonth}
       </span>
       {dayOfTheMonth === 1 ? (
-        <span className={styles.monthName}>
+        <span
+          className={`${styles.monthName} ${
+            isAnotherMonth ? styles.inactive : ""
+          }`}
+        >
           {date.toLocaleString("default", { month: "short" })}
         </span>
       ) : null}

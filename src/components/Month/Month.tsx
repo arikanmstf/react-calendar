@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import styles from "./month.module.css";
+import styles from "./Month.module.css";
 
 type Props = {
   children: ReactNode;

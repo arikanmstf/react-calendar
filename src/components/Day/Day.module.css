@@ -10,6 +10,10 @@
     color: rgb(135, 135, 135); */
 }
 
+.day:first-child {
+    border-left: 1px solid rgb(205, 205, 205);
+}
+
 .day .number, .day .monthName {
     position: absolute;
     top: 5px;
@@ -30,7 +34,7 @@
     background-color: rgb(252, 61, 57);
 }
 
-.day .number.inactive {
+.day .inactive {
     color: rgb(195, 195, 195);
 }
 

@@ -1,0 +1,16 @@
+.header {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dateStringContainer {
+    margin-left: 16px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.monthSelectorContainer {
+
+}

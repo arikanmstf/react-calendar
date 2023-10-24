@@ -1,0 +1,32 @@
+.button {
+    cursor: pointer;
+    background-color: rgb(256, 256, 256);
+    border: none;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+}
+
+.button.textButton {
+    padding: 0 8px;
+    border-radius: 8px;
+    background-color: rgb(240, 240, 240);
+}
+
+.button.iconButton {
+    border-radius: 50%;
+}
+.button.iconButton > svg {
+    width: 32px;
+    height: 32px;
+}
+
+.button:hover {
+    background-color:  rgb(230, 230, 230);
+}
+
+.button:active {
+    background-color: rgb(210, 210, 210);
+}

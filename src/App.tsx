@@ -1,12 +1,16 @@
-import Calendar from "./components/calendar/Calendar";
+import Calendar from "./components/Calendar";
 import AppContextProvider from "./context/app";
+import styles from "./app.module.css";
 
 function App() {
   return (
     <div className="App">
       <AppContextProvider date={new Date()}>
-        <h3>Calendar</h3>
-        <Calendar />
+        <div className={styles.calendarWrapper}>
+          <div className={styles.calendarContainer}>
+            <Calendar />
+          </div>
+        </div>
       </AppContextProvider>
     </div>
   );

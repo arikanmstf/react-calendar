@@ -1,0 +1,9 @@
+.monthSelector {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.navigationButtonContainer {
+    margin-left: 16px;
+}

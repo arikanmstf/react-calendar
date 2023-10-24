@@ -1,9 +1,12 @@
 import React, { FC, useMemo, useState } from "react";
 import { getStartDayOfMonthCalendar } from "../../utils/date";
-import Month from "../month/Month";
-import Week from "../week/Week";
-import Day from "../day/Day";
+import Month from "../Month";
+import Week from "../Week";
+import Day from "../Day";
 import { useAppContext } from "../../context/app";
+import MonthSelector from "../MonthSelector";
+import "../../ui/ui.css";
+import Header from "../Header/Header";
 
 const NR_OF_WEEKS_TO_SHOW = 6;
 const DAYS_IN_A_WEEK = 7;
@@ -32,15 +35,18 @@ const Calendar: FC = () => {
   }, [activeDate]);
 
   return (
-    <Month>
-      {days.map((week) => (
-        <Week>
-          {week.map((day) => (
-            <Day date={day}></Day>
-          ))}
-        </Week>
-      ))}
-    </Month>
+    <div>
+      <Header />
+      <Month>
+        {days.map((week) => (
+          <Week>
+            {week.map((day) => (
+              <Day date={day}></Day>
+            ))}
+          </Week>
+        ))}
+      </Month>
+    </div>
   );
 };
 

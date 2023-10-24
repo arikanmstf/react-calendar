@@ -61,7 +61,11 @@ jobs:
             development-node_modules-${{ env.CACHE_VERSION }}-
             development-node_modules-
       - name: Deploy to Gh pages
-        run: yarn deploy
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          yarn deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 permissions:
   contents: write

@@ -1,0 +1,58 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  install:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: yarn
+      - name: Use cached development node_modules
+        uses: actions/cache@v3
+        with:
+          path: ./node_modules
+          key: development-node_modules-${{ env.CACHE_VERSION }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            development-node_modules-${{ env.CACHE_VERSION }}-
+            development-node_modules-
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+  test:
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use cached development node_modules
+        uses: actions/cache@v3
+        with:
+          path: ./node_modules
+          key: development-node_modules-${{ env.CACHE_VERSION }}-${{ hashFiles('**/package-lock.lock') }}
+          restore-keys: |
+            development-node_modules-${{ env.CACHE_VERSION }}-
+            development-node_modules-
+      - name: Lint
+        run: yarn lint
+      - name: Unit tests
+        run: echo "todo"
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to Gh pages
+        run: yarn deploy
+
+permissions:
+  contents: write

@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <AppContextProvider date={new Date()}>
+        <h3>Calendar</h3>
         <Calendar />
       </AppContextProvider>
     </div>

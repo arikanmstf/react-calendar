@@ -45,12 +45,21 @@ jobs:
       - name: Unit tests
         run: echo "todo"
 
-  build:
+  deploy:
     needs: test
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use cached development node_modules
+        uses: actions/cache@v3
+        with:
+          path: ./node_modules
+          key: development-node_modules-${{ env.CACHE_VERSION }}-${{ hashFiles('**/package-lock.lock') }}
+          restore-keys: |
+            development-node_modules-${{ env.CACHE_VERSION }}-
+            development-node_modules-
       - name: Deploy to Gh pages
         run: yarn deploy
 

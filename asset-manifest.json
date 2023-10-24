@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/react-calendar/static/css/main.cece5128.css",
-    "main.js": "/react-calendar/static/js/main.372c0ccc.js",
+    "main.css": "/react-calendar/static/css/main.384f9938.css",
+    "main.js": "/react-calendar/static/js/main.fc2c7164.js",
     "static/js/787.cef29963.chunk.js": "/react-calendar/static/js/787.cef29963.chunk.js",
     "index.html": "/react-calendar/index.html",
-    "main.cece5128.css.map": "/react-calendar/static/css/main.cece5128.css.map",
-    "main.372c0ccc.js.map": "/react-calendar/static/js/main.372c0ccc.js.map",
+    "static/media/chevron-left.svg": "/react-calendar/static/media/chevron-left.b5c9e3462e65e4ae21873549326bcb29.svg",
+    "static/media/chevron-right.svg": "/react-calendar/static/media/chevron-right.edbb1ba7d87b3a840193b3f7358193ab.svg",
+    "main.384f9938.css.map": "/react-calendar/static/css/main.384f9938.css.map",
+    "main.fc2c7164.js.map": "/react-calendar/static/js/main.fc2c7164.js.map",
     "787.cef29963.chunk.js.map": "/react-calendar/static/js/787.cef29963.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cece5128.css",
-    "static/js/main.372c0ccc.js"
+    "static/css/main.384f9938.css",
+    "static/js/main.fc2c7164.js"
   ]
 }

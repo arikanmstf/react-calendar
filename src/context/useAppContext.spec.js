@@ -35,14 +35,7 @@ const LogState = ({ toCall, date, index } = {}) => {
       default:
         break;
     }
-  }, [ // eslint-disable-line
-    toCall,
-    goToNextMonth,
-    goToPreviousMonth,
-    jumpToDate,
-    updateOpenPopoverIndex,
-    fetchAndUpdateCalendarEvents,
-  ]);
+  }, [toCall]); // eslint-disable-line
   return <pre>{JSON.stringify(state)}</pre>;
 };
 

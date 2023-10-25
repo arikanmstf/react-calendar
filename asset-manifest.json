@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/react-calendar/static/css/main.fe2bc6e0.css",
-    "main.js": "/react-calendar/static/js/main.5b729da7.js",
+    "main.css": "/react-calendar/static/css/main.a9e8257e.css",
+    "main.js": "/react-calendar/static/js/main.a35c4c41.js",
     "static/js/787.cef29963.chunk.js": "/react-calendar/static/js/787.cef29963.chunk.js",
-    "static/media/bin.svg": "/react-calendar/static/media/bin.284cf6eb1198b74d3936c6757b6e5aa1.svg",
+    "static/media/sun.svg": "/react-calendar/static/media/sun.623052741efdf6d7b916fe16287b856e.svg",
+    "static/media/bin.svg": "/react-calendar/static/media/bin.2652ec51618984bab1bec180a10d3666.svg",
     "index.html": "/react-calendar/index.html",
     "static/media/calendar.svg": "/react-calendar/static/media/calendar.f550fe8f644c4884fb2312842112b3cb.svg",
+    "static/media/cross.svg": "/react-calendar/static/media/cross.e120fa622ddaa10a04c3631317ebfba0.svg",
     "static/media/chevron-left.svg": "/react-calendar/static/media/chevron-left.b5c9e3462e65e4ae21873549326bcb29.svg",
     "static/media/chevron-right.svg": "/react-calendar/static/media/chevron-right.edbb1ba7d87b3a840193b3f7358193ab.svg",
-    "main.fe2bc6e0.css.map": "/react-calendar/static/css/main.fe2bc6e0.css.map",
-    "main.5b729da7.js.map": "/react-calendar/static/js/main.5b729da7.js.map",
+    "main.a9e8257e.css.map": "/react-calendar/static/css/main.a9e8257e.css.map",
+    "main.a35c4c41.js.map": "/react-calendar/static/js/main.a35c4c41.js.map",
     "787.cef29963.chunk.js.map": "/react-calendar/static/js/787.cef29963.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe2bc6e0.css",
-    "static/js/main.5b729da7.js"
+    "static/css/main.a9e8257e.css",
+    "static/js/main.a35c4c41.js"
   ]
 }

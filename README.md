@@ -30,7 +30,6 @@ Compact calendar widget built in react with event support.
 ### Testing
 * Linting with eslint and prettier; Run `yarn lint`
 * Covered by unit tests with RTL & Jest. Coverage: 90%. See the coverage report at repository actions.
-* 
 
 ### Automation
 * When pushed to master; runs tests and if tests passed, builds and deploys to GitHub pages
@@ -38,14 +37,12 @@ Compact calendar widget built in react with event support.
 
 ### Technical Discussion
 * Full client-side rendering, powered by create-react-app
-* No any 3rd party date-time libraries used, such as momentJs etc. Only ES built in Date api.
-* 
+* No any 3rd party date-time libraries used, such as moment-js etc. Only ES builtin Date api.
 
 #### State management
 * No any 3rd party state manager libraries used. React's Context Api with reducers was very much enough.
 * Using React's reducers and actions. App keeps the state at the context provider and only gets updated by dispatch function.
 See `appReducer.tsx` `useAppContext.ts` and `AppContextProvider.tsx`.
-* 
 
 
 #### How animation works?

@@ -27,6 +27,7 @@ exports[`Calendar should render correctly 1`] = `
             >
               <svg
                 height="32"
+                style="color: red;"
                 width="32"
               >
                 chevron-left.svg
@@ -37,6 +38,7 @@ exports[`Calendar should render correctly 1`] = `
             >
               <svg
                 height="32"
+                style="color: red;"
                 width="32"
               >
                 chevron-right.svg

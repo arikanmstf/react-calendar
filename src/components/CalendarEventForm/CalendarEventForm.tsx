@@ -56,17 +56,36 @@ const CalendarEventForm: FC<Props> = ({ date }) => {
             required
             maxLength={26}
           />
+          <Button
+            type="button"
+            className={styles.crossButton}
+            icon
+            onClick={onCancel}
+          >
+            <Icon name="cross" />
+          </Button>
         </div>
         <div className={styles.content}>
-          <Icon name="calendar" />
-          <span>{date.toDateString()}</span>
+          <Icon name="sun" />
+          <div>
+            {date.toLocaleString("default", { weekday: "long" })}
+            {", "}
+            {date.getDate()}{" "}
+            {date.toLocaleString("default", { month: "short" })}
+          </div>
+        </div>
+        <div className={styles.content}>
+          <b>32 ℃</b>
+          <small>Mostly sunny. Light wind.</small>
         </div>
         <div className={styles.footer}>
-          <Button disabled={loading} accent="POSITIVE" role="submit">
+          <Button
+            className={styles.saveButton}
+            disabled={loading}
+            accent="POSITIVE"
+            role="submit"
+          >
             Save
-          </Button>
-          <Button disabled={loading} accent="NEGATIVE" onClick={onCancel}>
-            Cancel
           </Button>
         </div>
       </form>
@@ -81,8 +100,10 @@ const CalendarEventForm: FC<Props> = ({ date }) => {
                 data-testid="delete-button"
                 disabled={loading}
                 onClick={() => onDelete(calendarEvent)}
+                icon
+                className={styles.deleteButton}
               >
-                <Icon name="bin" />
+                <Icon width={20} height={20} name="bin" />
               </Button>
             </div>
           ))}

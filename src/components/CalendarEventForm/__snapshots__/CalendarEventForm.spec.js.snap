@@ -16,33 +16,55 @@ exports[`CalendarEventForm should render correctly 1`] = `
           required=""
           value=""
         />
+        <button
+          class="button iconButton   crossButton"
+          type="button"
+        >
+          <svg
+            height="32"
+            style="color: red;"
+            width="32"
+          >
+            cross.svg
+          </svg>
+        </button>
       </div>
       <div
         class="content"
       >
         <svg
-          height="24"
-          width="24"
+          height="32"
+          style="color: red;"
+          width="32"
         >
-          calendar.svg
+          sun.svg
         </svg>
-        <span>
-          Fri Oct 20 2023
-        </span>
+        <div>
+          Friday
+          , 
+          20
+           
+          Oct
+        </div>
+      </div>
+      <div
+        class="content"
+      >
+        <b>
+          32 ℃
+        </b>
+        <small>
+          Mostly sunny. Light wind.
+        </small>
       </div>
       <div
         class="footer"
       >
         <button
-          class="button textButton positive  "
+          class="button textButton positive  saveButton"
           role="submit"
         >
           Save
-        </button>
-        <button
-          class="button textButton  negative "
-        >
-          Cancel
         </button>
       </div>
     </form>

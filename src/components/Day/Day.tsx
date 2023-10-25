@@ -36,6 +36,7 @@ const Day: FC<Props> = ({ date, showWeekDay }) => {
       isOpen={isSelected}
       positions={["right", "left", "top", "bottom"]}
       content={<CalendarEventForm date={date} />}
+      onClickOutside={() => updateOpenPopoverIndex("")}
       align="start"
       padding={10}
     >

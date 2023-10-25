@@ -23,11 +23,11 @@ const MonthSelector = () => {
       </Button>
       <div className={styles.navigationButtonContainer}>
         <Button disabled={buttonDisabled} icon onClick={onPreviousMonthClick}>
-          <Icon name="chevron-left" width={32} height={32} />
+          <Icon name="chevron-left" />
         </Button>
 
         <Button disabled={buttonDisabled} icon onClick={onNextMonthClick}>
-          <Icon name="chevron-right" width={32} height={32} />
+          <Icon name="chevron-right" />
         </Button>
       </div>
     </span>

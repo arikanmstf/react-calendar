@@ -1,17 +1,13 @@
-import { MouseEventHandler, ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
-export type ButtonProps = {
-  onClick?: MouseEventHandler;
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
   icon?: boolean;
-  disabled?: boolean;
-  className?: string;
   accent?: "POSITIVE" | "NEUTRAL" | "NEGATIVE";
-  role?: "submit";
 };
 
 export type IconProps = {
-  name: "chevron-left" | "chevron-right" | "bin" | "calendar";
+  name: "chevron-left" | "chevron-right" | "bin" | "calendar" | "cross" | "sun";
   width?: number;
   height?: number;
 };

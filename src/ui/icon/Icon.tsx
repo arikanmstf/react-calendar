@@ -3,6 +3,8 @@ import { ReactComponent as ChevronLeft } from "./chevron-left.svg";
 import { ReactComponent as ChevronRight } from "./chevron-right.svg";
 import { ReactComponent as Bin } from "./bin.svg";
 import { ReactComponent as Calendar } from "./calendar.svg";
+import { ReactComponent as Cross } from "./cross.svg";
+import { ReactComponent as Sun } from "./sun.svg";
 import { IconProps } from "../types";
 
 const Icon: FC<IconProps> = ({ width, height, name }) => {
@@ -21,10 +23,22 @@ const Icon: FC<IconProps> = ({ width, height, name }) => {
     case "calendar":
       Component = Calendar;
       break;
+    case "cross":
+      Component = Cross;
+      break;
+    case "sun":
+      Component = Sun;
+      break;
     default:
       break;
   }
-  return <Component width={width || 24} height={height || 24} />;
+  return (
+    <Component
+      width={width || 32}
+      height={height || 32}
+      style={{ color: "red" }}
+    />
+  );
 };
 
 export default Icon;

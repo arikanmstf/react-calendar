@@ -21,7 +21,7 @@ describe("CalendarEventForm", () => {
 
   it("should render correctly", () => {
     const { container } = render(<CalendarEventForm date={new Date()} />);
-    expect(screen.getByText("Fri Oct 20 2023")).toBeInTheDocument();
+    expect(screen.getByText("Friday, 20 Oct")).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 

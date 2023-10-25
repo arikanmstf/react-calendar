@@ -19,6 +19,7 @@ Compact calendar widget built in react with event support.
 * Navigation between the months (previous and next).
   - Animations on previous and next month transitions.
   - Jump to current day.
+  - Jump to any year (50 year range)
 * Easy event management with simple click on the cells.
   - Saves to the session store, it can easily switch to be persistent, see `AppContextProvider.tsx`.
   - Lists events of the day when user clicked on the cells.

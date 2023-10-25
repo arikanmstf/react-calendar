@@ -70,7 +70,6 @@
   "jest": {
     "coveragePathIgnorePatterns" : [
       "index.ts",
-      "types.ts",
       "<rootDir>/src/reportWebVitals.ts"
     ]
   }

@@ -5,7 +5,12 @@ import { ReactComponent as Bin } from "./bin.svg";
 import { ReactComponent as Calendar } from "./calendar.svg";
 import { ReactComponent as Cross } from "./cross.svg";
 import { ReactComponent as Sun } from "./sun.svg";
-import { IconProps } from "../types";
+
+type IconProps = {
+  name: "chevron-left" | "chevron-right" | "bin" | "calendar" | "cross" | "sun";
+  width?: number;
+  height?: number;
+};
 
 const Icon: FC<IconProps> = ({ width, height, name }) => {
   let Component: FunctionComponent<SVGProps<SVGSVGElement>> = React.Fragment;

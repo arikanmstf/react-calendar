@@ -1,6 +1,11 @@
-import { FC } from "react";
+import { ButtonHTMLAttributes, FC, ReactNode } from "react";
 import styles from "./Button.module.css";
-import { ButtonProps } from "../types";
+
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  children: ReactNode;
+  icon?: boolean;
+  accent?: "POSITIVE" | "NEUTRAL" | "NEGATIVE";
+};
 
 const Button: FC<ButtonProps> = ({
   onClick,

@@ -15,7 +15,7 @@ const MonthView: FC<Props> = ({ referenceMonth, referenceYear }) => {
 
   return (
     <MonthViewProvider referenceDate={referenceDate}>
-      <div role="grid" className={styles.month}>
+      <div role="grid" className={styles.monthView}>
         <div className={styles.weekContainer}>
           {days.map((week, i) => (
             <div key={i} role="row" className={styles.week}>

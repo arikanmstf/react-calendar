@@ -3,7 +3,7 @@ import "../../ui/ui.css";
 import Header from "../Header/Header";
 import useAppContext from "../../context/useAppContext";
 import styles from "./Calendar.module.css";
-import MonthViewWithSplide from "../MonthViewWithSplide";
+import MonthViewWithTransition from "../MonthView/MonthViewWithTransition";
 
 const Calendar: FC = () => {
   const { activeDate } = useAppContext();
@@ -16,7 +16,7 @@ const Calendar: FC = () => {
   return (
     <div className={styles.calendar}>
       <Header />
-      <MonthViewWithSplide />
+      <MonthViewWithTransition />
     </div>
   );
 };

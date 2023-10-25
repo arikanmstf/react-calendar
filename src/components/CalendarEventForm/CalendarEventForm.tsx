@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import styles from "./CalendarEventForm.module.css";
 import TextInput from "../../ui/TextInput/TextInput";
-import { Bin, Calendar as CalendarIcon } from "../../ui/icons";
+import Icon from "../../ui/icon";
 import { ChangeEvent, FC, FormEvent, useState } from "react";
 import { Button } from "../../ui";
 import useAppContext from "../../context/useAppContext";
@@ -58,7 +58,7 @@ const CalendarEventForm: FC<Props> = ({ date }) => {
           />
         </div>
         <div className={styles.content}>
-          <CalendarIcon />
+          <Icon name="calendar" />
           <span>{date.toDateString()}</span>
         </div>
         <div className={styles.footer}>
@@ -82,7 +82,7 @@ const CalendarEventForm: FC<Props> = ({ date }) => {
                 disabled={loading}
                 onClick={() => onDelete(calendarEvent)}
               >
-                <Bin />
+                <Icon name="bin" />
               </Button>
             </div>
           ))}

@@ -9,3 +9,9 @@ export type ButtonProps = {
   accent?: "POSITIVE" | "NEUTRAL" | "NEGATIVE";
   role?: "submit";
 };
+
+export type IconProps = {
+  name: "chevron-left" | "chevron-right" | "bin" | "calendar";
+  width?: number;
+  height?: number;
+};

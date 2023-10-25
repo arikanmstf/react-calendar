@@ -7,12 +7,14 @@ const Button: FC<ButtonProps> = ({
   children,
   icon,
   disabled,
-  className,
+  className = "",
   accent = "NEUTRAL",
   role,
+  ...other
 }) => {
   return (
     <button
+      {...other}
       role={role}
       disabled={disabled}
       className={`${styles.button} ${

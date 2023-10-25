@@ -1,10 +1,11 @@
+import { v4 as uuidv4 } from "uuid";
 import styles from "./CalendarEventForm.module.css";
 import TextInput from "../../ui/TextInput/TextInput";
-import { Calendar } from "../../ui/icons";
+import { Bin, Calendar as CalendarIcon } from "../../ui/icons";
 import { ChangeEvent, FC, FormEvent, useState } from "react";
 import { Button } from "../../ui";
-import { useAppContext } from "../../context/app";
-import { postEvent } from "../../services/events";
+import useAppContext from "../../context/useAppContext";
+import { CalendarEvent, deleteEvent, postEvent } from "../../services/events";
 import { getEventsOfTheDate } from "../../utils/date";
 
 type Props = {
@@ -20,7 +21,6 @@ const CalendarEventForm: FC<Props> = ({ date }) => {
   const [loading, setLoading] = useState(false);
   const [title, setTitle] = useState("");
   const eventsOnThisDay = getEventsOfTheDate(calendarEvents, date);
-  console.log(eventsOnThisDay);
 
   const onTitleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setTitle(event.target.value);
@@ -31,10 +31,18 @@ const CalendarEventForm: FC<Props> = ({ date }) => {
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoading(true);
-    await postEvent({ date: date.valueOf(), title });
+    if (title) {
+      await postEvent({ date: date.valueOf(), title, id: uuidv4() }); // BE should generate the ID
+      await fetchAndUpdateCalendarEvents();
+      setLoading(false);
+      setTitle("");
+    }
+  };
+  const onDelete = async (calendarEvent: CalendarEvent) => {
+    setLoading(true);
+    await deleteEvent(calendarEvent);
     await fetchAndUpdateCalendarEvents();
     setLoading(false);
-    updateOpenPopoverIndex("");
   };
 
   return (
@@ -46,10 +54,11 @@ const CalendarEventForm: FC<Props> = ({ date }) => {
             onChange={onTitleChange}
             placeholder="Add new event"
             required
+            maxLength={26}
           />
         </div>
         <div className={styles.content}>
-          <Calendar />
+          <CalendarIcon />
           <span>{date.toDateString()}</span>
         </div>
         <div className={styles.footer}>
@@ -65,9 +74,16 @@ const CalendarEventForm: FC<Props> = ({ date }) => {
         <>
           <hr />
           <h5>Other events</h5>
-          {eventsOnThisDay.map((event, i) => (
+          {eventsOnThisDay.map((calendarEvent, i) => (
             <div className={styles.eventRow} key={i}>
-              <span>{event.title}</span>
+              <span>{calendarEvent.title}</span>
+              <Button
+                data-testid="delete-button"
+                disabled={loading}
+                onClick={() => onDelete(calendarEvent)}
+              >
+                <Bin />
+              </Button>
             </div>
           ))}
         </>

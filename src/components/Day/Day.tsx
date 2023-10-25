@@ -2,7 +2,7 @@ import { FC, useMemo, useState } from "react";
 import styles from "./Day.module.css";
 import { useMonthViewContext } from "../MonthView/MonthViewProvider";
 import { Popover } from "react-tiny-popover";
-import { useAppContext } from "../../context/app";
+import useAppContext from "../../context/useAppContext";
 import CalendarEventForm from "../CalendarEventForm/CalendarEventForm";
 import { getEventsOfTheDate, getUniqueCellId } from "../../utils/date";
 import { Indicator } from "../../ui";

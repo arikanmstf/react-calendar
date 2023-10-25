@@ -1,6 +1,6 @@
 import { Button } from "../../ui";
 import styles from "./MonthSelector.module.css";
-import { useAppContext } from "../../context/app";
+import useAppContext from "../../context/useAppContext";
 
 const MonthSelector = () => {
   const { jumpToDate } = useAppContext();

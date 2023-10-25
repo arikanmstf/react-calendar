@@ -1,0 +1,2698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonthView should render correctly: OCT-2023 1`] = `
+<div>
+  <div
+    class="month"
+    role="grid"
+  >
+    <div
+      class="weekContainer"
+    >
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Sun
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                Oct
+              </span>
+              , 
+              <span>
+                1
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Mon
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                2
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Tue
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                3
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Wed
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                4
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Thu
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                5
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Fri
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                6
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Sat
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                7
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                8
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                9
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                10
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                11
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                12
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                13
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                14
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                15
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                16
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                17
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                18
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                19
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number today "
+            >
+              <span>
+                20
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                21
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                22
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                23
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                24
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                25
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                26
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                27
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                28
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                29
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                30
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                31
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                Nov
+              </span>
+              , 
+              <span>
+                1
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                2
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                3
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                4
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                5
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                6
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                7
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                8
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                9
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                10
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                11
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MonthView should render future correctly: FEB-2032 1`] = `
+<div>
+  <div
+    class="month"
+    role="grid"
+  >
+    <div
+      class="weekContainer"
+    >
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Sun
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                29
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Mon
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                30
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Tue
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                31
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Wed
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                Feb
+              </span>
+              , 
+              <span>
+                1
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Thu
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                2
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Fri
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                3
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Sat
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                4
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                5
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                6
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                7
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                8
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                9
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                10
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                11
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                12
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                13
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                14
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                15
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                16
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                17
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                18
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                19
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                20
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                21
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                22
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                23
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                24
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                25
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                26
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                27
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                28
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                Mar
+              </span>
+              , 
+              <span>
+                1
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                2
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                3
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                4
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                5
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                6
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                7
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                8
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                9
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                10
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                11
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MonthView should render past correctly: MAR-1990 1`] = `
+<div>
+  <div
+    class="month"
+    role="grid"
+  >
+    <div
+      class="weekContainer"
+    >
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Sun
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                26
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Mon
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                27
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Tue
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                28
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Wed
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                Mar
+              </span>
+              , 
+              <span>
+                1
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Thu
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                2
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Fri
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                3
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header"
+          >
+            <b>
+              Sat
+            </b>
+          </div>
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                4
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                5
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                6
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                7
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                8
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                9
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                10
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                11
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                12
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                13
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                14
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                15
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                16
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                17
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                18
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                19
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                20
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                21
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                22
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                23
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                24
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                25
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                26
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                27
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                28
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                29
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                30
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  "
+            >
+              <span>
+                31
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                Apr
+              </span>
+              , 
+              <span>
+                1
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+      <div
+        class="week"
+        role="row"
+      >
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                2
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                3
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                4
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                5
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                6
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                7
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+        <div
+          class="day "
+          role="button"
+        >
+          <div
+            class="header content"
+          >
+            <div
+              class="number  inactive"
+            >
+              <span>
+                8
+              </span>
+            </div>
+          </div>
+          <div
+            class="footer"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

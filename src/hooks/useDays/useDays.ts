@@ -1,6 +1,6 @@
 import { getStartDayOfMonthCalendar } from "../../utils/date";
 import { useMemo, useState } from "react";
-import { useAppContext } from "../../context/app";
+import useAppContext from "../../context/useAppContext";
 
 const NR_OF_WEEKS_TO_SHOW = 6;
 const DAYS_IN_A_WEEK = 7;

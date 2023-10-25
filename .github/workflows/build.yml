@@ -43,7 +43,7 @@ jobs:
       - name: Lint
         run: yarn lint
       - name: Unit tests
-        run: echo "todo"
+        run: yarn test
 
   deploy:
     needs: test

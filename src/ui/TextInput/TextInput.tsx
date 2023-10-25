@@ -6,9 +6,16 @@ type Props = {
   value?: string;
   placeholder?: string;
   required?: boolean;
+  maxLength?: number;
 };
 
-const TextInput: FC<Props> = ({ value, onChange, placeholder, required }) => {
+const TextInput: FC<Props> = ({
+  value,
+  onChange,
+  placeholder,
+  required,
+  maxLength,
+}) => {
   return (
     <input
       className={styles.textInput}
@@ -16,6 +23,7 @@ const TextInput: FC<Props> = ({ value, onChange, placeholder, required }) => {
       onChange={onChange}
       placeholder={placeholder}
       required={required}
+      maxLength={maxLength}
     />
   );
 };

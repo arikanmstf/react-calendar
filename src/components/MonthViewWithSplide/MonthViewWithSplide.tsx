@@ -1,7 +1,7 @@
-import styles from "../Calendar/Calendar.module.css";
+import styles from "./MonthViewWithSplide.module.css";
 import { Splide as SplideObject } from "@splidejs/splide";
 import React, { FC, useState } from "react";
-import { useAppContext } from "../../context/app";
+import useAppContext from "../../context/useAppContext";
 import SplideContainer from "./SplideContainer";
 
 type Props = {};
@@ -34,7 +34,7 @@ const MonthViewWithSplide: FC<Props> = () => {
   };
 
   return (
-    <div className={styles.monthContainer}>
+    <div className={styles.monthViewWithSplide}>
       <SplideContainer
         key={key}
         onSplideMove={onSplideMove}

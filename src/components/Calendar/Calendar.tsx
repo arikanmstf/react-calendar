@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import "../../ui/ui.css";
 import Header from "../Header/Header";
-import { useAppContext } from "../../context/app";
+import useAppContext from "../../context/useAppContext";
 import styles from "./Calendar.module.css";
 import MonthViewWithSplide from "../MonthViewWithSplide";
 

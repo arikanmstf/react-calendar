@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styles from "./Header.module.css";
-import { useAppContext } from "../../context/app";
+import useAppContext from "../../context/useAppContext";
 import MonthSelector from "../MonthSelector";
 
 const Header: FC = () => {

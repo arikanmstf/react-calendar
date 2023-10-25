@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalendarEventForm should render correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <form>
+      <div
+        class="header"
+      >
+        <input
+          class="textInput"
+          maxlength="26"
+          placeholder="Add new event"
+          required=""
+          value=""
+        />
+      </div>
+      <div
+        class="content"
+      >
+        <svg
+          height="24"
+          width="24"
+        >
+          calendar.svg
+        </svg>
+        <span>
+          Fri Oct 20 2023
+        </span>
+      </div>
+      <div
+        class="footer"
+      >
+        <button
+          class="button textButton positive  "
+          role="submit"
+        >
+          Save
+        </button>
+        <button
+          class="button textButton  negative "
+        >
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

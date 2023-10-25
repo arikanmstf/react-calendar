@@ -21,8 +21,9 @@ const SplideContainer: FC<Props> = ({
       options={{
         rewind: false,
         start: 1,
-        keyboard: true,
+        keyboard: false,
         pagination: false,
+        drag: false,
       }}
     >
       {monthsToShow.map((referenceDate) => (

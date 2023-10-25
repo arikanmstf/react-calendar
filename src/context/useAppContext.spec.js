@@ -38,6 +38,10 @@ const LogState = ({ toCall, date, index } = {}) => {
 };
 
 describe("useAppContext", () => {
+  test("timezone should always be UTC", () => {
+    expect(new Date().getTimezoneOffset()).toBe(0);
+  });
+
   it("should return state correctly", () => {
     const { container } = render(<LogState />);
     expect(
@@ -49,7 +53,7 @@ describe("useAppContext", () => {
   it("should call goToNextMonth correctly", () => {
     const { container } = render(<LogState toCall="goToNextMonth" />);
     expect(
-      screen.getByText(/"activeDate":"2023-11-20T01:00:00.000Z"/),
+      screen.getByText(/"activeDate":"2023-11-20T00:00:00.000Z"/),
     ).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });

@@ -5,6 +5,8 @@
 import "@testing-library/jest-dom";
 import { ReactNode } from "react";
 
+process.env.TZ = "UTC";
+
 jest.mock("@splidejs/react-splide", () => ({
   Splide: ({ children }: { children: ReactNode }) => children,
   SplideSlide: ({ children }: { children: ReactNode }) => children,

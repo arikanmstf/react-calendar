@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "TZ=UTC react-scripts test --coverage",
     "lint": "eslint src --fix",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",

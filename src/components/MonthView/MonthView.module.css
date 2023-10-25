@@ -11,20 +11,8 @@
 .monthViewWithTransition {
     position: relative;
     overflow-x: hidden;
-    height: 768px;
-}
-
-.monthView:first-child {
-    left: -768px;
-    z-index: 2;
-}
-.monthView:nth-child(2) {
-    left: 0;
-    z-index: 2;
-}
-.monthView:nth-child(3) {
-    left: 768px;
-    z-index: 2;
+    overflow-y: visible;
+    height: 470px;
 }
 
 .week {

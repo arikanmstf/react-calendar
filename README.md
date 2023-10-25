@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# react-calendar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Compact calendar widget built in react with event support.
 
-## Available Scripts
+### Demo
+* Application is live at: https://arikanmstf.github.io/react-calendar/
 
-In the project directory, you can run:
+### Install
+* Clone the repo, install and run;
+* `$ git clone https://github.com/arikanmstf/react-calendar.git`
+* `$ yarn install --frozen-lockfile`
+* `$ yarn start`
+* Visit: http://localhost:3000/
 
-### `yarn start`
+### Features
+* In general, inspired by Google and MacOs's calendar.
+* Responsive design, min-width: `330px`
+* Strict Typescript type checking.
+* Navigation between the months (previous and next).
+  - Animations on previous and next month transitions.
+  - Jump to current day.
+* Easy event management with simple click on the cells.
+  - Saves to the session store, it can easily switch to be persistent, see `AppContextProvider.tsx`.
+  - Lists events of the day when user clicked on the cells.
+  - Easy deletion of desired events.
+  - Simple HTML based input validation at event title.
+  - Event CRUD operations made in async way, so it can easily be applied to the backend api in the future. See `src/services/events.ts`.
+  - Small ios-like indicators when day has an event on it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Testing
+* Linting with eslint and prettier; Run `yarn lint`
+* Covered by unit tests with RTL & Jest. Coverage: 90%. See the coverage report at repository actions.
+* 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Automation
+* When pushed to master; runs tests and if tests passed, builds and deploys to GitHub pages
+* Using GitHub actions, see `build.yml`
 
-### `yarn test`
+### Technical Discussion
+* Full client-side rendering, powered by create-react-app
+* No any 3rd party date-time libraries used, such as momentJs etc. Only ES built in Date api.
+* 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### State management
+* No any 3rd party state manager libraries used. React's Context Api with reducers was very much enough.
+* Using React's reducers and actions. App keeps the state at the context provider and only gets updated by dispatch function.
+See `appReducer.tsx` `useAppContext.ts` and `AppContextProvider.tsx`.
+* 
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### How animation works?
+* Even tho, user is seeing one month at a time, in fact there are 3 months getting rendered every time.
+So they are next and previous months. App always keeps three months in the state and according to this state renders these month views.
+When user interacts with the button, say to the next month; while pre-rendered next month is moving into the view port,
+app is updating the state with the new middle-month. And before transition completed new months getting to their place.

@@ -11,12 +11,18 @@ jest.mock("./services/events");
 jest.useFakeTimers().setSystemTime(new Date("2023-10-20"));
 
 // @ts-ignore
-const storageMock = {
-  __memory: {},
-  getItem: jest.fn((key) => storageMock.__memory[key]),
-  setItem: jest.fn((key, value) => (storageMock.__memory[key] = value)),
-  removeItem: jest.fn(),
-  clear: jest.fn(),
-};
+function storageMock() {
+  // @ts-ignore
+  const _self = this;
+  _self.__memory = {};
+  _self.getItem = jest.fn((key) => _self.__memory[key]);
+  _self.setItem = jest.fn((key, value) => {
+    _self.__memory[key] = value;
+  });
+  _self.removeItem = jest.fn();
+  _self.clear = jest.fn(() => {
+    _self.__memory = {};
+  });
+}
 // @ts-ignore
-global.sessionStorage = storageMock;
+window.sessionStorage = storageMock;

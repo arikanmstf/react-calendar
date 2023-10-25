@@ -46,6 +46,6 @@ export const deleteEvent = async (calendarEvent: CalendarEvent) => {
 };
 
 // delete all events
-export const resetEvents = () => {
+export const flushEvents = () => {
   window.sessionStorage?.setItem(EVENTS_KEY, "");
 };

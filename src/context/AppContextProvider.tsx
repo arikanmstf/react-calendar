@@ -7,7 +7,7 @@ import {
   useEffect,
   useReducer,
 } from "react";
-import { resetEvents } from "../services/events";
+import { flushEvents } from "../services/events";
 import appReducer, { AppAction, AppState } from "./appReducer";
 
 type AppContextProviderProps = {
@@ -55,7 +55,7 @@ const AppContextProvider: FC<AppContextProviderProps> = ({
     //   const events = await getEvents();
     //   dispatch({ type: "UPDATE_CALENDAR_EVENTS", data: events });
     // };
-    resetEvents();
+    flushEvents();
   }, []);
 
   return (

@@ -5,8 +5,6 @@
   "private": true,
   "homepage": "https://arikanmstf.github.io/react-calendar",
   "dependencies": {
-    "@splidejs/react-splide": "splidejs/react-splide",
-    "@splidejs/splide": "^4.1.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -61,6 +59,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/react-transition-group": "^4.4.8",
     "@types/uuid": "^9.0.6",
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",

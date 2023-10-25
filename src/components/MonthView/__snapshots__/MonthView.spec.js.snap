@@ -3,7 +3,7 @@
 exports[`MonthView should render correctly: OCT-2023 1`] = `
 <div>
   <div
-    class="month"
+    class="monthView"
     role="grid"
   >
     <div
@@ -902,7 +902,7 @@ exports[`MonthView should render correctly: OCT-2023 1`] = `
 exports[`MonthView should render future correctly: FEB-2032 1`] = `
 <div>
   <div
-    class="month"
+    class="monthView"
     role="grid"
   >
     <div
@@ -1801,7 +1801,7 @@ exports[`MonthView should render future correctly: FEB-2032 1`] = `
 exports[`MonthView should render past correctly: MAR-1990 1`] = `
 <div>
   <div
-    class="month"
+    class="monthView"
     role="grid"
   >
     <div

@@ -7,11 +7,6 @@ import { ReactNode } from "react";
 
 process.env.TZ = "UTC";
 
-jest.mock("@splidejs/react-splide", () => ({
-  Splide: ({ children }: { children: ReactNode }) => children,
-  SplideSlide: ({ children }: { children: ReactNode }) => children,
-}));
-
 jest.mock("./services/events");
 
 jest.useFakeTimers().setSystemTime(new Date("2023-10-20"));

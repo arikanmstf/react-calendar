@@ -1,6 +1,5 @@
 import Calendar from "./components/Calendar";
 import AppContextProvider from "./context/AppContextProvider";
-import "@splidejs/react-splide/css";
 import styles from "./app.module.css";
 
 function App() {

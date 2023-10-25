@@ -16,15 +16,3 @@ code {
   z-index: 2;
 }
 
-/* Overwrite  3rd party library */
-.splide__arrow {
-  top: calc(-1em - 8px) !important;
-}
-
-.splide__arrow--prev {
-  left: unset !important;
-  right: 3em !important
-}
-.splide__arrow--next {
-  right: 0 !important
-}

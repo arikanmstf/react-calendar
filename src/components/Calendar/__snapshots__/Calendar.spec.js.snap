@@ -19,6 +19,30 @@ exports[`Calendar should render correctly 1`] = `
           >
             Today
           </button>
+          <div
+            class="navigationButtonContainer"
+          >
+            <button
+              class="button iconButton   "
+            >
+              <svg
+                height="32"
+                width="32"
+              >
+                chevron-left.svg
+              </svg>
+            </button>
+            <button
+              class="button iconButton   "
+            >
+              <svg
+                height="32"
+                width="32"
+              >
+                chevron-right.svg
+              </svg>
+            </button>
+          </div>
         </span>
       </div>
       <div
@@ -32,11 +56,12 @@ exports[`Calendar should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="monthViewWithSplide"
+      class="monthViewWithTransition"
     >
       <div
-        class="month"
+        class="monthView"
         role="grid"
+        style="transition: left 400ms; left: -768px;"
       >
         <div
           class="weekContainer"
@@ -929,8 +954,9 @@ exports[`Calendar should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="month"
+        class="monthView"
         role="grid"
+        style="transition: left 400ms; left: 0px;"
       >
         <div
           class="weekContainer"
@@ -1823,8 +1849,9 @@ exports[`Calendar should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="month"
+        class="monthView"
         role="grid"
+        style="transition: left 400ms; left: 768px;"
       >
         <div
           class="weekContainer"

@@ -6,22 +6,31 @@ import {
   useReducer,
   Reducer,
   Dispatch,
+  useEffect,
 } from "react";
+import { CalendarEvent, getEvents, resetEvents } from "../services/events";
 
 type AppState = {
   activeDate: Date;
   monthsToShow: Date[];
-  splideIndex: number;
+  calendarEvents: Record<number, CalendarEvent[]>;
+  openPopoverIndex: string;
 };
 type AppAction = {
-  type: "GO_TO_NEXT_MONTH" | "GO_TO_PREVIOUS_MONTH" | "UPDATE_SPLIDE_INDEX";
+  type:
+    | "GO_TO_NEXT_MONTH"
+    | "GO_TO_PREVIOUS_MONTH"
+    | "JUMP_TO_DATE"
+    | "UPDATE_OPEN_POPOVER_INDEX"
+    | "UPDATE_CALENDAR_EVENTS";
   data?: any;
 };
 
 const AppContext = createContext<AppState>({
   activeDate: new Date(),
   monthsToShow: [],
-  splideIndex: 1,
+  openPopoverIndex: "",
+  calendarEvents: {},
 });
 const AppDispatchContext = createContext<Dispatch<AppAction>>(() => {
   throw new Error("Please initialize the dispatch function.");
@@ -35,11 +44,28 @@ const appReducer: Reducer<AppState, AppAction> = (
   const middleMonth = monthsToShow[monthsToShow.length - 2];
 
   switch (action.type) {
-    case "UPDATE_SPLIDE_INDEX":
-      console.log(action);
+    case "UPDATE_CALENDAR_EVENTS":
       return {
         ...state,
-        splideIndex: action.data,
+        calendarEvents: action.data,
+      };
+    case "JUMP_TO_DATE": {
+      const middleMonth = action.data;
+      const newPreviousMonth = new Date(middleMonth);
+      newPreviousMonth.setMonth(newPreviousMonth.getMonth() - 1);
+      const newNextMonth = new Date(middleMonth);
+      newNextMonth.setMonth(newNextMonth.getMonth() + 1);
+
+      return {
+        ...state,
+        monthsToShow: [newPreviousMonth, middleMonth, newNextMonth],
+      };
+    }
+
+    case "UPDATE_OPEN_POPOVER_INDEX":
+      return {
+        ...state,
+        openPopoverIndex: action.data,
       };
     case "GO_TO_PREVIOUS_MONTH": {
       const newPreviousMonth = new Date(middleMonth);
@@ -48,6 +74,7 @@ const appReducer: Reducer<AppState, AppAction> = (
       return {
         ...state,
         monthsToShow: [newPreviousMonth, monthsToShow[0], monthsToShow[1]],
+        openPopoverIndex: "",
       };
     }
 
@@ -58,6 +85,7 @@ const appReducer: Reducer<AppState, AppAction> = (
       return {
         ...state,
         monthsToShow: [monthsToShow[1], monthsToShow[2], newNextMonth],
+        openPopoverIndex: "",
       };
     }
   }
@@ -83,9 +111,20 @@ const AppContextProvider: FC<AppContextProviderProps> = ({
     {
       activeDate: middleMonth,
       monthsToShow: [previousMonth, middleMonth, nextMonth],
-      splideIndex: 1,
+      openPopoverIndex: "",
+      calendarEvents: {},
     },
   );
+
+  useEffect(() => {
+    // fetch events when app initialised.
+    // commented out because,it is requested to delete all events on app load.
+    // const fetch = async () => {
+    //   const events = await getEvents();
+    //   dispatch({ type: "UPDATE_CALENDAR_EVENTS", data: events });
+    // };
+    resetEvents();
+  }, []);
 
   return (
     <AppContext.Provider value={state}>
@@ -112,17 +151,27 @@ export const useAppContext = () => {
     }
     dispatch({ type: "GO_TO_PREVIOUS_MONTH" });
   };
+  const jumpToDate = (date: Date) => {
+    dispatch({ type: "JUMP_TO_DATE", data: date });
+  };
 
-  const updateSplideIndex = (index: number) => {
-    dispatch({ type: "UPDATE_SPLIDE_INDEX", data: index });
+  const updateOpenPopoverIndex = (index: string) => {
+    dispatch({ type: "UPDATE_OPEN_POPOVER_INDEX", data: index });
+  };
+
+  const fetchAndUpdateCalendarEvents = async () => {
+    const events = await getEvents();
+    dispatch({ type: "UPDATE_CALENDAR_EVENTS", data: events });
   };
 
   return {
     ...context,
     activeDate: context.monthsToShow[context.monthsToShow.length - 2],
+    jumpToDate,
     goToNextMonth,
     goToPreviousMonth,
-    updateSplideIndex,
+    updateOpenPopoverIndex,
+    fetchAndUpdateCalendarEvents,
   };
 };
 

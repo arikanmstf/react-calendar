@@ -8,12 +8,17 @@ const Button: FC<ButtonProps> = ({
   icon,
   disabled,
   className,
+  accent = "NEUTRAL",
+  role,
 }) => {
   return (
     <button
+      role={role}
       disabled={disabled}
       className={`${styles.button} ${
         icon ? styles.iconButton : styles.textButton
+      } ${accent === "POSITIVE" ? styles.positive : ""} ${
+        accent === "NEGATIVE" ? styles.negative : ""
       } ${className}`}
       onClick={onClick}
     >

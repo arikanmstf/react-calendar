@@ -13,30 +13,62 @@
     border-left: 1px solid rgb(205, 205, 205);
 }
 
-.day .number, .day .monthName {
-    position: absolute;
-    top: 5px;
+.number, .monthName {
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.day .number {
-    right: 5px;
+.number {
     width: 32px;
 }
 
-.day .number.today {
+.monthName {
+    width: 36px;
+}
+
+.day.selected {
+    background-color: rgb(250, 250, 250);
+}
+
+.number.today {
     color: rgb(250, 250, 250);
     border-radius: 50%;
     background-color: rgb(252, 61, 57);
 }
 
-.day .inactive {
+.inactive {
     color: rgb(195, 195, 195);
 }
 
-.day .monthName {
+.monthName {
     left: 5px;
+}
+
+.header {
+    color: #70757a;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header.content {
+    color: #54575b;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    flex-wrap: wrap;
+}
+
+.footer > * {
+    margin-left: 2px;
+}
+
+.footer > *:first-child {
+    margin-left: 0;
 }

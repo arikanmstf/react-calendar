@@ -6,4 +6,6 @@ export type ButtonProps = {
   icon?: boolean;
   disabled?: boolean;
   className?: string;
+  accent?: "POSITIVE" | "NEUTRAL" | "NEGATIVE";
+  role?: "submit";
 };

@@ -1,9 +1,11 @@
 import { Button } from "../../ui";
 import styles from "./MonthSelector.module.css";
+import { useAppContext } from "../../context/app";
 
 const MonthSelector = () => {
+  const { jumpToDate } = useAppContext();
   const onTodayClick = () => {
-    // updateActiveDate(new Date());
+    jumpToDate(new Date());
   };
 
   return (

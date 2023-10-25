@@ -12,7 +12,6 @@ const Calendar: FC = () => {
 
   const previousMonth = new Date(activeDate);
   previousMonth.setMonth(activeDate.getMonth() - 1);
-  console.log({ activeDate });
 
   return (
     <div className={styles.calendar}>

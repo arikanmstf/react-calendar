@@ -7,7 +7,12 @@ import SplideContainer from "./SplideContainer";
 type Props = {};
 
 const MonthViewWithSplide: FC<Props> = () => {
-  const { goToNextMonth, goToPreviousMonth, monthsToShow } = useAppContext();
+  const {
+    goToNextMonth,
+    goToPreviousMonth,
+    monthsToShow,
+    updateOpenPopoverIndex,
+  } = useAppContext();
   const [key, setKey] = useState(0);
   const onSplideMoved = (
     splide: SplideObject,
@@ -24,10 +29,15 @@ const MonthViewWithSplide: FC<Props> = () => {
     }
   };
 
+  const onSplideMove = () => {
+    updateOpenPopoverIndex("");
+  };
+
   return (
     <div className={styles.monthContainer}>
       <SplideContainer
         key={key}
+        onSplideMove={onSplideMove}
         onSplideMoved={onSplideMoved}
         monthsToShow={monthsToShow}
       />

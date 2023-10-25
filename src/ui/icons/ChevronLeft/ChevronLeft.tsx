@@ -1,12 +1,7 @@
 import { ReactComponent as Icon } from "./chevron-left.svg";
-import IconRoot from "../IconRoot";
 
 const ChevronLeft = () => {
-  return (
-    <IconRoot>
-      <Icon />
-    </IconRoot>
-  );
+  return <Icon width={24} height={24} />;
 };
 
 export default ChevronLeft;

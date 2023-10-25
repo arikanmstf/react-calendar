@@ -19,8 +19,8 @@ const MonthView: FC<Props> = ({ referenceMonth, referenceYear }) => {
         <div className={styles.weekContainer}>
           {days.map((week, i) => (
             <div key={i} role="row" className={styles.week}>
-              {week.map((day, i) => (
-                <Day key={i} date={day} />
+              {week.map((day, j) => (
+                <Day showWeekDay={i === 0} key={j} date={day} />
               ))}
             </div>
           ))}

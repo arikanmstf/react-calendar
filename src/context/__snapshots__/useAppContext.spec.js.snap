@@ -3,7 +3,7 @@
 exports[`useAppContext should call fetchAndUpdateCalendarEvents correctly 1`] = `
 <div>
   <pre>
-    {"activeDate":"2023-10-20T00:00:00.000Z","monthsToShow":["2023-09-20T00:00:00.000Z","2023-10-20T00:00:00.000Z","2023-11-20T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{"1697760000000":[{"title":"Mock event","date":"2023-10-20T00:00:00.000Z","id":"uuid-1"},{"title":"Second mock event","date":"2023-10-20T00:00:00.000Z","id":"uuid-2"}]}}
+    {"activeDate":"2023-10-20T00:00:00.000Z","monthsToShow":["2023-09-20T00:00:00.000Z","2023-10-20T00:00:00.000Z","2023-11-20T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{"1697760000000":[{"title":"Mock event","date":"2023-10-20T00:00:00.000Z","id":"uuid-1"},{"title":"Second mock event","date":"2023-10-20T00:00:00.000Z","id":"uuid-2"}],"1697749200000":[{"title":"Third event","date":"2023-10-19T21:00:00.000Z","id":"uuid-3"},{"title":"Fourth event","date":"2023-10-19T21:00:00.000Z","id":"uuid-4"}]}}
   </pre>
 </div>
 `;

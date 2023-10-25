@@ -21,9 +21,12 @@ export const AppContext = createContext<AppState>({
   openPopoverIndex: "",
   calendarEvents: {},
 });
+AppContext.displayName = "AppContext";
+
 export const AppDispatchContext = createContext<Dispatch<AppAction>>(() => {
   throw new Error("Please initialize the dispatch function.");
 });
+AppDispatchContext.displayName = "AppDispatchContext";
 
 const AppContextProvider: FC<AppContextProviderProps> = ({
   children,

@@ -32,8 +32,17 @@ const LogState = ({ toCall, date, index } = {}) => {
       case "fetchAndUpdateCalendarEvents":
         void fetchAndUpdateCalendarEvents();
         break;
+      default:
+        break;
     }
-  }, [toCall]);
+  }, [ // eslint-disable-line
+    toCall,
+    goToNextMonth,
+    goToPreviousMonth,
+    jumpToDate,
+    updateOpenPopoverIndex,
+    fetchAndUpdateCalendarEvents,
+  ]);
   return <pre>{JSON.stringify(state)}</pre>;
 };
 

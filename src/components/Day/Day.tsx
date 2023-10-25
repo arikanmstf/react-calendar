@@ -1,4 +1,4 @@
-import { FC, useMemo, useState } from "react";
+import { FC, useMemo, useState, memo } from "react";
 import styles from "./Day.module.css";
 import { useMonthViewContext } from "../MonthView/MonthViewProvider";
 import { Popover } from "react-tiny-popover";
@@ -76,4 +76,4 @@ const Day: FC<Props> = ({ date, showWeekDay }) => {
   );
 };
 
-export default Day;
+export default memo(Day);

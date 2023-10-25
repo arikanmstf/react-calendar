@@ -12,6 +12,8 @@ type MonthViewProviderProps = {
 const MonthViewContext = createContext<MonthViewState>({
   referenceDate: new Date(),
 });
+MonthViewContext.displayName = "MonthViewContext";
+
 export const useMonthViewContext = () => useContext(MonthViewContext);
 
 const MonthViewProvider: FC<MonthViewProviderProps> = ({

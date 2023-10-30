@@ -1,4 +1,6 @@
 # react-calendar
+<img width="1050" alt="Screenshot 2023-10-25 at 21 33 03" src="https://github.com/arikanmstf/react-calendar/assets/13220774/4b860afe-bfe0-4e24-9574-e079ad90e978">
+
 
 Compact calendar widget built in react with event support.
 
@@ -56,42 +58,44 @@ app is updating the state with the new middle-month. And before transition compl
 ----------------------------------|---------|----------|---------|---------|-------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s       
 ----------------------------------|---------|----------|---------|---------|-------------------------
-All files                         |    87.5 |    70.49 |   79.62 |   87.73 |                         
-src                               |     100 |      100 |     100 |     100 |                         
-App.tsx                           |     100 |      100 |     100 |     100 |                         
-src/components/Calendar           |     100 |      100 |     100 |     100 |                         
-Calendar.tsx                      |     100 |      100 |     100 |     100 |                         
-src/components/CalendarEventForm  |      96 |      100 |   85.71 |      96 |                         
-CalendarEventForm.tsx             |      96 |      100 |   85.71 |      96 | 29                      
-src/components/Day                |     100 |       90 |     100 |     100 |                         
-Day.tsx                           |     100 |       90 |     100 |     100 | 45                      
-src/components/Header             |     100 |      100 |     100 |     100 |                         
-Header.tsx                        |     100 |      100 |     100 |     100 |                         
-src/components/MonthSelector      |      80 |      100 |      50 |      80 |                         
-MonthSelector.tsx                 |      80 |      100 |      50 |      80 | 9,12                    
-src/components/MonthView          |      96 |       50 |     100 |   95.83 |                         
-MonthView.tsx                     |     100 |      100 |     100 |     100 |                         
-MonthViewProvider.tsx             |     100 |      100 |     100 |     100 |                         
-MonthViewWithTransition.tsx       |    92.3 |       50 |     100 |    92.3 | 33                      
-src/context                       |    92.3 |    77.77 |      90 |    92.3 |                         
-AppContextProvider.tsx            |   92.85 |      100 |   66.66 |   92.85 | 27                      
-appReducer.tsx                    |   94.73 |      100 |     100 |   94.73 | 73                      
-useAppContext.ts                  |   89.47 |       50 |     100 |   89.47 | 11,17                   
-src/hooks/useDays                 |     100 |    33.33 |     100 |     100 |                         
-useDays.ts                        |     100 |    33.33 |     100 |     100 | 8-14                    
-src/mocks                         |     100 |      100 |     100 |     100 |                         
-mockCalendarEvents.ts             |     100 |      100 |     100 |     100 |                         
-render.tsx                        |     100 |      100 |     100 |     100 |                         
-src/services                      |   21.73 |        0 |       0 |   22.72 |                         
-events.ts                         |   21.73 |        0 |       0 |   22.72 | 11,16-18,23-31,37-43,50
-src/ui/Button                     |     100 |      100 |     100 |     100 |                         
-Button.tsx                        |     100 |      100 |     100 |     100 |                         
-src/ui/Indicator                  |     100 |      100 |     100 |     100 |                         
-Indicator.tsx                     |     100 |      100 |     100 |     100 |                         
-src/ui/TextInput                  |     100 |      100 |     100 |     100 |                         
-TextInput.tsx                     |     100 |      100 |     100 |     100 |                         
-src/ui/icon                       |    92.3 |    88.88 |     100 |    92.3 |                         
-Icon.tsx                          |    92.3 |    88.88 |     100 |    92.3 | 25                      
-src/utils                         |     100 |    66.66 |     100 |     100 |                         
-date.tsx                          |     100 |    66.66 |     100 |     100 | 3                       
+All files                         |   87.28 |    68.25 |   79.66 |   87.44 |                         
+ src                              |     100 |      100 |     100 |     100 |                         
+  App.tsx                         |     100 |      100 |     100 |     100 |                         
+ src/components/Calendar          |     100 |      100 |     100 |     100 |                         
+  Calendar.tsx                    |     100 |      100 |     100 |     100 |                         
+ src/components/CalendarEventForm |      96 |      100 |   85.71 |      96 |                         
+  CalendarEventForm.tsx           |      96 |      100 |   85.71 |      96 | 29                      
+ src/components/Day               |   94.11 |       90 |      80 |   94.11 |                         
+  Day.tsx                         |   94.11 |       90 |      80 |   94.11 | 39                      
+ src/components/Header            |     100 |      100 |     100 |     100 |                         
+  Header.tsx                      |     100 |      100 |     100 |     100 |                         
+ src/components/MonthSelector     |      80 |      100 |      50 |      80 |                         
+  MonthSelector.tsx               |      80 |      100 |      50 |      80 | 9,12                    
+ src/components/MonthView         |      96 |       50 |     100 |   95.83 |                         
+  MonthView.tsx                   |     100 |      100 |     100 |     100 |                         
+  MonthViewProvider.tsx           |     100 |      100 |     100 |     100 |                         
+  MonthViewWithTransition.tsx     |    92.3 |       50 |     100 |    92.3 | 33                      
+ src/context                      |   92.45 |    77.77 |      90 |   92.45 |                         
+  AppContextProvider.tsx          |   92.85 |      100 |   66.66 |   92.85 | 27                      
+  appReducer.tsx                  |   94.73 |      100 |     100 |   94.73 | 73                      
+  useAppContext.ts                |      90 |       50 |     100 |      90 | 11,17                   
+ src/hooks/useDays                |     100 |    33.33 |     100 |     100 |                         
+  useDays.ts                      |     100 |    33.33 |     100 |     100 | 8-14                    
+ src/mocks                        |     100 |      100 |     100 |     100 |                         
+  mockCalendarEvents.ts           |     100 |      100 |     100 |     100 |                         
+  render.tsx                      |     100 |      100 |     100 |     100 |                         
+ src/services                     |   21.73 |        0 |       0 |   22.72 |                         
+  events.ts                       |   21.73 |        0 |       0 |   22.72 | 11,16-18,23-31,37-43,50 
+ src/ui/Button                    |     100 |     87.5 |     100 |     100 |                         
+  Button.tsx                      |     100 |     87.5 |     100 |     100 | 28                      
+ src/ui/Indicator                 |     100 |      100 |     100 |     100 |                         
+  Indicator.tsx                   |     100 |      100 |     100 |     100 |                         
+ src/ui/Select                    |     100 |      100 |     100 |     100 |                         
+  Select.tsx                      |     100 |      100 |     100 |     100 |                         
+ src/ui/TextInput                 |     100 |      100 |     100 |     100 |                         
+  TextInput.tsx                   |     100 |      100 |     100 |     100 |                         
+ src/ui/icon                      |   82.35 |    81.81 |     100 |   82.35 |                         
+  Icon.tsx                        |   82.35 |    81.81 |     100 |   82.35 | 29-30,38                
+ src/utils                        |     100 |    66.66 |     100 |     100 |                         
+  date.tsx                        |     100 |    66.66 |     100 |     100 | 3                       
 ----------------------------------|---------|----------|---------|---------|-------------------------

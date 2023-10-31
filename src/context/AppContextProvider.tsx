@@ -33,10 +33,18 @@ const AppContextProvider: FC<AppContextProviderProps> = ({
   date: middleMonth,
 }) => {
   const nextMonth = new Date(middleMonth);
-  nextMonth.setMonth(middleMonth.getMonth() + 1);
+  nextMonth.setFullYear(
+    middleMonth.getFullYear(),
+    middleMonth.getMonth() + 1,
+    1,
+  );
 
   const previousMonth = new Date(middleMonth);
-  previousMonth.setMonth(middleMonth.getMonth() - 1);
+  previousMonth.setFullYear(
+    middleMonth.getFullYear(),
+    middleMonth.getMonth() - 1,
+    1,
+  );
 
   const [state, dispatch] = useReducer<Reducer<AppState, AppAction>>(
     appReducer,

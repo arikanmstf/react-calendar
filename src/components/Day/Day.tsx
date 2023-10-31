@@ -27,6 +27,7 @@ const Day: FC<Props> = ({ date, showWeekDay }) => {
   const eventsOnThisDay = getEventsOfTheDate(calendarEvents, date);
 
   const onClick = () => {
+    console.log({ date, referenceDate });
     updateOpenPopoverIndex(popoverIndex);
   };
   const isSelected = openPopoverIndex === popoverIndex;
@@ -36,7 +37,6 @@ const Day: FC<Props> = ({ date, showWeekDay }) => {
       isOpen={isSelected}
       positions={["right", "left", "top", "bottom"]}
       content={<CalendarEventForm date={date} />}
-      onClickOutside={() => updateOpenPopoverIndex("")}
       align="start"
       padding={10}
     >

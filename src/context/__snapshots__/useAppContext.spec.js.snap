@@ -3,7 +3,7 @@
 exports[`useAppContext should call fetchAndUpdateCalendarEvents correctly 1`] = `
 <div>
   <pre>
-    {"activeDate":"2023-10-20T00:00:00.000Z","monthsToShow":["2023-09-20T00:00:00.000Z","2023-10-20T00:00:00.000Z","2023-11-20T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{"1697760000000":[{"title":"Mock event","date":"2023-10-20T00:00:00.000Z","id":"uuid-1"},{"title":"Second mock event","date":"2023-10-20T00:00:00.000Z","id":"uuid-2"}],"1697749200000":[{"title":"Third event","date":"2023-10-19T21:00:00.000Z","id":"uuid-3"},{"title":"Fourth event","date":"2023-10-19T21:00:00.000Z","id":"uuid-4"}]}}
+    {"activeDate":"2023-10-20T00:00:00.000Z","monthsToShow":["2023-09-01T00:00:00.000Z","2023-10-20T00:00:00.000Z","2023-11-01T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{"1697760000000":[{"title":"Mock event","date":"2023-10-20T00:00:00.000Z","id":"uuid-1"},{"title":"Second mock event","date":"2023-10-20T00:00:00.000Z","id":"uuid-2"}],"1697749200000":[{"title":"Third event","date":"2023-10-19T21:00:00.000Z","id":"uuid-3"},{"title":"Fourth event","date":"2023-10-19T21:00:00.000Z","id":"uuid-4"}]}}
   </pre>
 </div>
 `;
@@ -11,7 +11,7 @@ exports[`useAppContext should call fetchAndUpdateCalendarEvents correctly 1`] = 
 exports[`useAppContext should call goToNextMonth correctly 1`] = `
 <div>
   <pre>
-    {"activeDate":"2023-11-20T00:00:00.000Z","monthsToShow":["2023-10-20T00:00:00.000Z","2023-11-20T00:00:00.000Z","2023-12-20T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{}}
+    {"activeDate":"2023-11-01T00:00:00.000Z","monthsToShow":["2023-10-20T00:00:00.000Z","2023-11-01T00:00:00.000Z","2023-12-01T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{}}
   </pre>
 </div>
 `;
@@ -19,7 +19,7 @@ exports[`useAppContext should call goToNextMonth correctly 1`] = `
 exports[`useAppContext should call goToPreviousMonth correctly 1`] = `
 <div>
   <pre>
-    {"activeDate":"2023-09-20T00:00:00.000Z","monthsToShow":["2023-08-20T00:00:00.000Z","2023-09-20T00:00:00.000Z","2023-10-20T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{}}
+    {"activeDate":"2023-09-01T00:00:00.000Z","monthsToShow":["2023-08-01T00:00:00.000Z","2023-09-01T00:00:00.000Z","2023-10-20T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{}}
   </pre>
 </div>
 `;
@@ -27,7 +27,7 @@ exports[`useAppContext should call goToPreviousMonth correctly 1`] = `
 exports[`useAppContext should call jumpToDate correctly 1`] = `
 <div>
   <pre>
-    {"activeDate":"2024-06-29T00:00:00.000Z","monthsToShow":["2024-05-29T00:00:00.000Z","2024-06-29T00:00:00.000Z","2024-07-29T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{}}
+    {"activeDate":"2024-06-29T00:00:00.000Z","monthsToShow":["2024-05-01T00:00:00.000Z","2024-06-29T00:00:00.000Z","2024-07-01T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{}}
   </pre>
 </div>
 `;
@@ -35,7 +35,7 @@ exports[`useAppContext should call jumpToDate correctly 1`] = `
 exports[`useAppContext should call updateOpenPopoverIndex correctly 1`] = `
 <div>
   <pre>
-    {"activeDate":"2023-10-20T00:00:00.000Z","monthsToShow":["2023-09-20T00:00:00.000Z","2023-10-20T00:00:00.000Z","2023-11-20T00:00:00.000Z"],"openPopoverIndex":"TEST_INDEX","calendarEvents":{}}
+    {"activeDate":"2023-10-20T00:00:00.000Z","monthsToShow":["2023-09-01T00:00:00.000Z","2023-10-20T00:00:00.000Z","2023-11-01T00:00:00.000Z"],"openPopoverIndex":"TEST_INDEX","calendarEvents":{}}
   </pre>
 </div>
 `;
@@ -43,7 +43,7 @@ exports[`useAppContext should call updateOpenPopoverIndex correctly 1`] = `
 exports[`useAppContext should return state correctly 1`] = `
 <div>
   <pre>
-    {"activeDate":"2023-10-20T00:00:00.000Z","monthsToShow":["2023-09-20T00:00:00.000Z","2023-10-20T00:00:00.000Z","2023-11-20T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{}}
+    {"activeDate":"2023-10-20T00:00:00.000Z","monthsToShow":["2023-09-01T00:00:00.000Z","2023-10-20T00:00:00.000Z","2023-11-01T00:00:00.000Z"],"openPopoverIndex":"","calendarEvents":{}}
   </pre>
 </div>
 `;

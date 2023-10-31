@@ -33,9 +33,17 @@ const appReducer: Reducer<AppState, AppAction> = (
     case "JUMP_TO_DATE": {
       const middleMonth = action.data;
       const newPreviousMonth = new Date(middleMonth);
-      newPreviousMonth.setMonth(newPreviousMonth.getMonth() - 1);
+      newPreviousMonth.setFullYear(
+        newPreviousMonth.getFullYear(),
+        newPreviousMonth.getMonth() - 1,
+        1,
+      );
       const newNextMonth = new Date(middleMonth);
-      newNextMonth.setMonth(newNextMonth.getMonth() + 1);
+      newNextMonth.setFullYear(
+        newNextMonth.getFullYear(),
+        newNextMonth.getMonth() + 1,
+        1,
+      );
 
       return {
         ...state,
@@ -50,7 +58,11 @@ const appReducer: Reducer<AppState, AppAction> = (
       };
     case "GO_TO_PREVIOUS_MONTH": {
       const newPreviousMonth = new Date(middleMonth);
-      newPreviousMonth.setMonth(newPreviousMonth.getMonth() - 2);
+      newPreviousMonth.setFullYear(
+        newPreviousMonth.getFullYear(),
+        newPreviousMonth.getMonth() - 2,
+        1,
+      );
 
       return {
         ...state,
@@ -61,7 +73,11 @@ const appReducer: Reducer<AppState, AppAction> = (
 
     case "GO_TO_NEXT_MONTH": {
       const newNextMonth = new Date(middleMonth);
-      newNextMonth.setMonth(newNextMonth.getMonth() + 2);
+      newNextMonth.setFullYear(
+        newNextMonth.getFullYear(),
+        newNextMonth.getMonth() + 2,
+        1,
+      );
 
       return {
         ...state,

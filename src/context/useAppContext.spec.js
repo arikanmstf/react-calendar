@@ -55,7 +55,7 @@ describe("useAppContext", () => {
   it("should call goToNextMonth correctly", () => {
     const { container } = render(<LogState toCall="goToNextMonth" />);
     expect(
-      screen.getByText(/"activeDate":"2023-11-20T00:00:00.000Z"/),
+      screen.getByText(/"activeDate":"2023-11-01T00:00:00.000Z"/),
     ).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
@@ -63,7 +63,7 @@ describe("useAppContext", () => {
   it("should call goToPreviousMonth correctly", () => {
     const { container } = render(<LogState toCall="goToPreviousMonth" />);
     expect(
-      screen.getByText(/"activeDate":"2023-09-20T00:00:00.000Z"/),
+      screen.getByText(/"activeDate":"2023-09-01T00:00:00.000Z"/),
     ).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });

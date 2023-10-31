@@ -19,7 +19,6 @@ const useAppContext = () => {
     dispatch({ type: "GO_TO_PREVIOUS_MONTH" });
   };
   const jumpToDate = (date: Date) => {
-    console.log("jumpToDatejumpToDate");
     dispatch({ type: "JUMP_TO_DATE", data: date });
   };
 

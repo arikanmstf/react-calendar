@@ -9,7 +9,9 @@ const Select: FC<Props> = ({ value, options, ...other }) => {
   return (
     <select className={styles.select} value={value} {...other}>
       {options.map(({ value, label }) => (
-        <option value={value}>{label}</option>
+        <option key={value} value={value}>
+          {label}
+        </option>
       ))}
     </select>
   );
